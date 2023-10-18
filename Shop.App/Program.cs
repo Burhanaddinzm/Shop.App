@@ -1,37 +1,71 @@
 ﻿using Shop.Core.Models;
-
 Product[] products = { };
 
-CreateProduct();
-void CreateProduct()
+Console.WriteLine("1.Create Product");
+Console.WriteLine("2.Show Products");
+Console.WriteLine("0.Close App");
+string Request = Console.ReadLine();
+
+while (Request != "0")
 {
-    Product product = new Product();
 
-    Console.WriteLine("Adi daxil edin");
-    product.Name = Console.ReadLine();
-    CheckString(product.Name);
+    switch (Request)
+    {
+        case "1":
+            CreateProduct();
+            break;
+        case "2":
+            ShowProduct();
+            break;
+        default:
+            Console.WriteLine("This option is not valid!");
+            break;
+    }
 
-    Console.WriteLine("Kateqoriyani daxil edin");
-    product.Category = Console.ReadLine();
-    CheckString(product.Category);
-
-    Console.WriteLine("Qiymeti daxil edin");
-    product.Price = int.Parse(Console.ReadLine());
-
-    Console.WriteLine("Stok sayini daxil edin");
-    product.StockCount = int.Parse(Console.ReadLine());
-
-
-
-    Array.Resize(ref products, products.Length + 1);
+    Console.WriteLine("1.Create Product");
+    Console.WriteLine("2.Show Products");
+    Console.WriteLine("0.Close App");
+    Request = Console.ReadLine();
 }
 
-void CheckString(string input)
+void CreateProduct()
 {
+    Console.WriteLine("Input product name");
+    string Name = Console.ReadLine();
+    CheckString(Name);
 
-    while (string.IsNullOrWhiteSpace(a))
+    Console.WriteLine("Input product category");
+    string Category = Console.ReadLine();
+    CheckString(Category);
+
+    Console.WriteLine("Input product price");
+    int Price = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Input product stock count");
+    int StockCount = int.Parse(Console.ReadLine());
+
+    Product product = new Product(Name, Category, Price, StockCount);
+
+    Array.Resize(ref products, products.Length + 1);
+
+    products[products.Length - 1] = product;
+    Console.WriteLine("New product created!");
+}
+
+void ShowProduct()
+{
+    foreach (Product product in products)
     {
-        Console.WriteLine("Input value is not correct");
-        a= Console.ReadLine();
+        Console.WriteLine(product.GetFullInfo());
+    }
+}
+
+void CheckString(string data)
+{
+    while (string.IsNullOrWhiteSpace(data))
+    {
+        Console.WriteLine("Incorrect data!");
+        data = Console.ReadLine();
+        data.Trim();
     }
 }

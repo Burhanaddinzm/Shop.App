@@ -1,11 +1,13 @@
 ﻿using Shop.Core.Models;
+
 Product[] products = { };
 
 Console.WriteLine("1.Create Product");
 Console.WriteLine("2.Show Products");
 Console.WriteLine("0.Close App");
+//Variable for the main app's functionality
 string Request = Console.ReadLine();
-
+//Main app-----------------------------------
 while (Request != "0")
 {
 
@@ -27,7 +29,10 @@ while (Request != "0")
     Console.WriteLine("0.Close App");
     Request = Console.ReadLine();
 }
+//-------------------------------------------
 
+/*Gets the input from the user and calls CheckString(); methode for strings, then resizes the array and
+equals the index of the array to the input.*/
 void CreateProduct()
 {
     Console.WriteLine("Input product name");
@@ -52,14 +57,22 @@ void CreateProduct()
     Console.WriteLine("New product created!");
 }
 
+//Calls the GetFullInfo(); methode for every object in array.
 void ShowProduct()
 {
     foreach (Product product in products)
     {
         Console.WriteLine(product.GetFullInfo());
     }
-}
+    //Alternative
+    //for (int i = 0; i < products.Length; i++)
+    //{
+    //    Console.WriteLine(products[i].GetFullInfo());
 
+    //}
+
+}
+//Reads if string contains Null or Whitespace, then trims whitespace from start and end. 
 void CheckString(string data)
 {
     while (string.IsNullOrWhiteSpace(data))

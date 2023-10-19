@@ -38,10 +38,12 @@ void CreateProduct()
     Console.WriteLine("Input product name");
     string Name = Console.ReadLine();
     CheckString(Name);
+    Name = Name.Trim();
 
     Console.WriteLine("Input product category");
     string Category = Console.ReadLine();
     CheckString(Category);
+    Category = Category.Trim();
 
     Console.WriteLine("Input product price");
     int Price = int.Parse(Console.ReadLine());
@@ -79,6 +81,5 @@ void CheckString(string data)
     {
         Console.WriteLine("Incorrect data!");
         data = Console.ReadLine();
-        data.Trim();
     }
 }

@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/Shop.Core.dll": {}
         }
+      },
+      "Shop.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Shop.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Shop.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shop.Service.dll": {}
+        }
       }
     }
   },
@@ -19,27 +32,37 @@
       "type": "project",
       "path": "../Shop.Core/Shop.Core.csproj",
       "msbuildProject": "../Shop.Core/Shop.Core.csproj"
+    },
+    "Shop.Service/1.0.0": {
+      "type": "project",
+      "path": "../Shop.Service/Shop.Service.csproj",
+      "msbuildProject": "../Shop.Service/Shop.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Shop.Core >= 1.0.0"
+      "Shop.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\burhanaddinzm\\.nuget\\packages\\": {}
+    "C:\\Users\\Burhan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\burhanaddinzm\\Desktop\\P237\\Shop.App\\Shop.App\\Shop.App.csproj",
+      "projectUniqueName": "C:\\Users\\Burhan\\source\\repos\\Shop.App\\Shop.App\\Shop.App.csproj",
       "projectName": "Shop.App",
-      "projectPath": "C:\\Users\\burhanaddinzm\\Desktop\\P237\\Shop.App\\Shop.App\\Shop.App.csproj",
-      "packagesPath": "C:\\Users\\burhanaddinzm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\burhanaddinzm\\Desktop\\P237\\Shop.App\\Shop.App\\obj\\",
+      "projectPath": "C:\\Users\\Burhan\\source\\repos\\Shop.App\\Shop.App\\Shop.App.csproj",
+      "packagesPath": "C:\\Users\\Burhan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Burhan\\source\\repos\\Shop.App\\Shop.App\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\burhanaddinzm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Burhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -47,14 +70,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\burhanaddinzm\\Desktop\\P237\\Shop.App\\Shop.Core\\Shop.Core.csproj": {
-              "projectPath": "C:\\Users\\burhanaddinzm\\Desktop\\P237\\Shop.App\\Shop.Core\\Shop.Core.csproj"
+            "C:\\Users\\Burhan\\source\\repos\\Shop.App\\Shop.Service\\Shop.Service.csproj": {
+              "projectPath": "C:\\Users\\Burhan\\source\\repos\\Shop.App\\Shop.Service\\Shop.Service.csproj"
             }
           }
         }
@@ -84,7 +108,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

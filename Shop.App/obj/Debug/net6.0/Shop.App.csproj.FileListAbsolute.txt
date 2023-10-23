@@ -34,3 +34,5 @@ C:\Users\burhanaddinzm\Desktop\P237\Shop.App\Shop.App\obj\Debug\net6.0\refint\Sh
 C:\Users\burhanaddinzm\Desktop\P237\Shop.App\Shop.App\obj\Debug\net6.0\Shop.App.pdb
 C:\Users\burhanaddinzm\Desktop\P237\Shop.App\Shop.App\obj\Debug\net6.0\Shop.App.genruntimeconfig.cache
 C:\Users\burhanaddinzm\Desktop\P237\Shop.App\Shop.App\obj\Debug\net6.0\ref\Shop.App.dll
+C:\Users\Burhan\source\repos\Shop.App\Shop.App\bin\Debug\net6.0\Shop.Service.dll
+C:\Users\Burhan\source\repos\Shop.App\Shop.App\bin\Debug\net6.0\Shop.Service.pdb

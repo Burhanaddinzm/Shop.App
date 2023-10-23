@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Shop.App/1.0.0": {
         "dependencies": {
-          "Shop.Core": "1.0.0"
+          "Shop.Service": "1.0.0"
         },
         "runtime": {
           "Shop.App.dll": {}
@@ -17,6 +17,14 @@
       "Shop.Core/1.0.0": {
         "runtime": {
           "Shop.Core.dll": {}
+        }
+      },
+      "Shop.Service/1.0.0": {
+        "dependencies": {
+          "Shop.Core": "1.0.0"
+        },
+        "runtime": {
+          "Shop.Service.dll": {}
         }
       }
     }
@@ -28,6 +36,11 @@
       "sha512": ""
     },
     "Shop.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shop.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

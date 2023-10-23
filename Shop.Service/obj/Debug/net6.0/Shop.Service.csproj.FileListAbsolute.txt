@@ -1,0 +1,15 @@
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\bin\Debug\net6.0\Shop.Service.deps.json
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\bin\Debug\net6.0\Shop.Service.dll
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\bin\Debug\net6.0\Shop.Service.pdb
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\bin\Debug\net6.0\Shop.Core.dll
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\bin\Debug\net6.0\Shop.Core.pdb
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.csproj.AssemblyReference.cache
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.AssemblyInfoInputs.cache
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.AssemblyInfo.cs
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.csproj.CoreCompileInputs.cache
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.csproj.CopyComplete
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.dll
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\refint\Shop.Service.dll
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\Shop.Service.pdb
+C:\Users\Burhan\source\repos\Shop.App\Shop.Service\obj\Debug\net6.0\ref\Shop.Service.dll

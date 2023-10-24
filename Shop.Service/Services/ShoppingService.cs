@@ -38,7 +38,6 @@ namespace Shop.Service.Services
             Console.WriteLine("New product created!");
         }
 
-        //Calls the ToString(); methode for every object in array.
         public void ShowProducts()
         {
             foreach (Product product in Products)
@@ -48,7 +47,7 @@ namespace Shop.Service.Services
             //Alternative
             //for (int i = 0; i < products.Length; i++)
             //{
-            //    Console.WriteLine(products[i].ToString());
+            //    Console.WriteLine(products[i]());
 
             //}
 

@@ -11,7 +11,6 @@
         public int Price { get; set; }
         public int StockCount { get; set; }
 
-        //Constructor is important for this scenario
         public Product()
         {
             _id++;

@@ -1,4 +1,6 @@
-﻿namespace Shop.Core.Models
+﻿using Shop.Core.Enums;
+
+namespace Shop.Core.Models
 {
     public class Product
     {
@@ -7,8 +9,8 @@
         //Properties
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Category { get; set; }
-        public int Price { get; set; }
+        public ProductCategory ProductCategory { get; set; }
+        public double Price { get; set; }
         public int StockCount { get; set; }
 
         public Product()
@@ -22,7 +24,7 @@
         }
         public override string ToString()
         {
-            return $"Id: {Id} Name:{Name} Category:{Category} Price:{Price} Stock:{StockCount}";
+            return $"Id: {Id} Name:{Name} Category:{ProductCategory} Price:{Price} Stock:{StockCount}";
 
         }
     }

@@ -1,8 +1,8 @@
-﻿using Shop.Service.Services;
+﻿using Shop.Service.Services.Implementations;
 
-ShoppingService shoppingService = new ShoppingService();
+ProductService productService = new ProductService();
 ShowMenu();
-//Variable for the main app's functionality
+
 string request = Console.ReadLine();
 //Main app-----------------------------------
 while (request != "0")
@@ -11,13 +11,13 @@ while (request != "0")
     switch (request)
     {
         case "1":
-            shoppingService.CreateProduct();
+            productService.CreateProduct();
             break;
         case "2":
-            shoppingService.ShowProducts();
+            productService.GetProducts();
             break;
         case "3":
-            shoppingService.ShowProductById();
+            productService.GetProductById();
             break;
         default:
             Console.WriteLine("This option is not valid!");
